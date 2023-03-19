@@ -73,7 +73,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #000;
+  backdrop-filter: blur(8px);
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
 }
@@ -93,7 +93,7 @@
   font-size: 20px;
   color: #555555;
   cursor: pointer;
-  background: #000;
+  backdrop-filter: blur(8px);
   transition: all 0.3s ease-in-out;
 }
 
@@ -121,7 +121,7 @@
   padding: 5px 30px;
   color: #bbbbbb;
   border-radius: 50px;
-  background: #000;
+  backdrop-filter: blur(8px);
   position: relative;
   line-height: 50px;
   transition: all 0.65s ease;
