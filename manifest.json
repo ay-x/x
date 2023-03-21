@@ -7,13 +7,13 @@
     "start_url": "https://yaqdhan.com",
     "icons": [
       {
-      <img src=y.PNG>
+      <img src=y.png>
         "sizes": "72x72",
         "type": "image/png"
       },
   
       {
-      <img src=y.PNG>
+      <img src=y.png>
         "sizes": "512x512",
         "type": "image/png"
       }
