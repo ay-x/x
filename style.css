@@ -38,12 +38,11 @@
   font-style: italic;
   flex-wrap: nowrap;
   position: absolute;
-  color: #6e6e6e;
+  color: #ffffff;
   top: 69%;
   left: 36%;
   font-size: 30px;
   font-weight: 800;
-  opacity: 0.35;
   box-decoration-break: clone;
   transform: translate(-50%,-50%);
   -webkit-transition: color 0.65 ease-in;
@@ -56,16 +55,15 @@
 .text:hover {
   opacity: 1;
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: #333333fa
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   font-style: italic;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .wrapper{
   position: fixed;
@@ -91,16 +89,16 @@
   line-height: 50px;
   border-radius: 50%;
   font-size: 20px;
-  color: #474747;
+  color: #ffffff;
   cursor: pointer;
   backdrop-filter: blur(3px);
   transition: all 0.3s ease-in-out;
+  
 }
 
-
-
-#active:checked ~ .menu-btn i:before{
-  content: "\f00d";
+#active:checked ~ .menu-btn x:before{
+    content: "\f00d";
+ 
 }
 .wrapper ul{
   position: absolute;
@@ -119,12 +117,13 @@
   font-size: 30px;
   font-weight: 500;
   padding: 5px 30px;
-  color: #bbbbbb;
+  color: #ffffff;
   border-radius: 50px;
   background-color:#000 ;
   position: relative;
   line-height: 50px;
   transition: all 0.65s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -132,7 +131,7 @@
   transform: scaleY(6);
 }
 .wrapper ul li a:hover{
-  color: #555555;
+  color: #333333fa;
 }
 input[type="checkbox"]{
   display: none;
@@ -147,7 +146,7 @@ footer,main {
 }
 
 a,body {
-  color: #474747
+  color: #ffffff
   
 }
 
@@ -165,18 +164,22 @@ a {
 }
 
 a:hover {
-  color: #ffffff
+  color: #333333fa
 }
 
   footer {
     font-size: .9rem;
     
   }
- @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
   *{
     transition: all 0.003s;
 }
+
+
+
 
 body{
     font-family: 'Lato', sans-serif;
