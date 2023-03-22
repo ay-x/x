@@ -41,7 +41,7 @@
   color: #ffffff;
   top: 69%;
   left: 36%;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 800;
   box-decoration-break: clone;
   transform: translate(-50%,-50%);
@@ -109,12 +109,12 @@
   text-align: left;
 }
 .wrapper ul li{
-  margin: 15px 0;
+  margin: 14px 0;
 }
 .wrapper ul li a{
   color: none;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 500;
   padding: 5px 30px;
   color: #ffffff;
@@ -125,7 +125,6 @@
   transition: all 0.65s ease;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 
 .wrapper ul li a:hover:after{
   transform: scaleY(6);
@@ -138,8 +137,6 @@ input[type="checkbox"]{
 }
 
 
-
-
 footer,main {
   text-align: center;
   
@@ -149,7 +146,6 @@ a,body {
   color: #ffffff
   
 }
-
 
 footer {
   bottom: 15px;
@@ -177,8 +173,6 @@ a:hover {
   *{
     transition: all 0.003s;
 }
-
-
 
 
 body{
@@ -209,4 +203,48 @@ body{
 @keyframes type{
 	  from{box-shadow: inset -3px 0px 0px #dd1515;}
 	  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+
+
+h1 {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  color: #ffffff;
+  top: 69%;
+  left: 36%;
+  font-size: 25px;
+  font-weight: 800;
+  transform: translate(-50%,-50%);
+  opacity: 33;
+}
+
+.h1:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: #c92929fa
+}
+
+
+@media screen and (max-width: 760px) {
+  .text{
+    font-size: 30px;
+
+
+  }
+
+  .wrapper ul li a{
+    font-size: 35px;
+
+
+  }
+
+
+  .wrapper ul li{
+    margin: 5px 0;
+  }
+
+
+  
+
+
 }
