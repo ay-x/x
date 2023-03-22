@@ -178,10 +178,6 @@ a:hover {
     transition: all 0.003s;
 }
 
-html {
-    height: 100%;
-}
-
 body{
     font-family: 'Lato', sans-serif;
     color: #ffffff;
