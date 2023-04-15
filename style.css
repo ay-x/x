@@ -38,11 +38,11 @@
   font-style: italic;
   flex-wrap: nowrap;
   position: absolute;
-  color: #ffffff;
+  color: #fff;
   top: 69%;
-  left: 36%;
-  font-size: 45px;
-  font-weight: 800;
+  left: 35%;
+  font-size: 55px;
+  font-weight: 700;
   box-decoration-break: clone;
   transform: translate(-50%,-50%);
   -webkit-transition: color 0.65 ease-in;
@@ -89,7 +89,7 @@
   line-height: 50px;
   border-radius: 50%;
   font-size: 20px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   backdrop-filter: blur(3px);
   transition: all 0.3s ease-in-out;
@@ -103,21 +103,22 @@
 .wrapper ul{
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 30%;
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: left;
+  
 }
 .wrapper ul li{
-  margin: 14px 0;
+  margin: 20px 0;
 }
 .wrapper ul li a{
   color: none;
   text-decoration: none;
-  font-size: 45px;
-  font-weight: 500;
+  font-size: 55px;
+  font-weight: 300;
   padding: 5px 30px;
-  color: #ffffff;
+  color: #fff;
   border-radius: 50px;
   background-color:#000 ;
   position: relative;
@@ -166,5 +167,78 @@ a:hover {
   footer {
     font-size: .9rem;
     
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+  *{
+    transition: all 0.003s;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+#main {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.fof {
+	  display: table-cell;
+	  vertical-align: middle;
+}
+
+.fof p {
+	  font-size: 25px;
+	  display: inline-block;
+	  padding-right: 8px;
+	  animation: type .8s alternate infinite;
+}
+
+@media screen and (max-width: 690px){
+
+  .text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    flex-wrap: nowrap;
+    position: absolute;
+    color: #ffffff;
+    top: 69%;
+    left: 38%;
+    font-size: 35px;
+    font-weight: 400;
+    box-decoration-break: clone;
+    transform: translate(-50%,-50%);
+    -webkit-transition: color 0.65 ease-in;
+    -o-transition: color 0.65s ease-in;
+    transition: color 0.65s ease-in;
+    
+  }
+  
+  .wrapper ul li a{
+    color: none;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 50px;
+    background-color:#000 ;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.65s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .wrapper ul li{
+    margin: 3px 0;
+  }
+
   }
 
