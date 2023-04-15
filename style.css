@@ -39,6 +39,7 @@
   flex-wrap: nowrap;
   position: absolute;
   color: #fff;
+  animation:transitionin 2.5s;
   top: 69%;
   left: 35%;
   font-size: 55px;
