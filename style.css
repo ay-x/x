@@ -39,7 +39,7 @@
   flex-wrap: nowrap;
   position: absolute;
   color: #fff;
-  animation:transitionin 2.5s;
+  animation:transitionin 4.5s;
   top: 69%;
   left: 35%;
   font-size: 55px;
@@ -95,7 +95,7 @@
   cursor: pointer;
   backdrop-filter: blur(3px);
   transition: all 0.3s ease-in-out;
-  animation:transitionin 2.5s;
+  animation:transitionin 4.5s;
   
 }
 
@@ -145,7 +145,7 @@ input[type="checkbox"]{
 
 footer,main {
   text-align: center;
-  animation:transitionin 2.5s;
+  animation:transitionin 4.5s;
   
 }
 
@@ -219,7 +219,7 @@ body {
     flex-wrap: nowrap;
     position: absolute;
     color: #ffffff;
-    animation:transitionin 2.5s;
+    animation:transitionin 4.5s;
     top: 69%;
     left: 35%;
     font-size: 30px;
@@ -252,7 +252,6 @@ body {
   }
 
   }
-
 
   @keyframes transitionin {
     from {
