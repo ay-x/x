@@ -94,6 +94,7 @@
   cursor: pointer;
   backdrop-filter: blur(3px);
   transition: all 0.3s ease-in-out;
+  animation:transitionin 2.5s;
   
 }
 
@@ -130,10 +131,12 @@
 
 .wrapper ul li a:hover:after{
   transform: scaleY(6);
-}
+}  
+  
 .wrapper ul li a:hover{
   color: #333333fa;
 }
+
 input[type="checkbox"]{
   display: none;
 }
@@ -141,6 +144,7 @@ input[type="checkbox"]{
 
 footer,main {
   text-align: center;
+  animation:transitionin 2.5s;
   
 }
 
@@ -214,15 +218,16 @@ body {
     flex-wrap: nowrap;
     position: absolute;
     color: #ffffff;
+    animation:transitionin 2.5s;
     top: 69%;
     left: 35%;
     font-size: 30px;
     font-weight: 400;
     box-decoration-break: clone;
-    transform: translate(-50%,-50%);
     -webkit-transition: color 0.65 ease-in;
     -o-transition: color 0.65s ease-in;
     transition: color 0.65s ease-in;
+    
     
   }
   
@@ -247,3 +252,19 @@ body {
 
   }
 
+
+  @keyframes transitionin {
+    from {
+   
+      opacity: 0;
+      transform: rotateX(6);
+   
+    }
+    to {
+     
+      opacity: 1;
+      transform: rotateX(6);
+    
+    }
+    
+  }
