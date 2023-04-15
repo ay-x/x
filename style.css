@@ -170,6 +170,8 @@ a:hover {
     
   }
 
+
+
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
   *{
@@ -202,6 +204,8 @@ body {
 	  animation: type .8s alternate infinite;
 }
 
+
+
 @media screen and (max-width: 690px){
 
   .text {
@@ -211,8 +215,8 @@ body {
     position: absolute;
     color: #ffffff;
     top: 69%;
-    left: 37%;
-    font-size: 33px;
+    left: 35%;
+    font-size: 30px;
     font-weight: 400;
     box-decoration-break: clone;
     transform: translate(-50%,-50%);
@@ -225,7 +229,7 @@ body {
   .wrapper ul li a{
     color: none;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     padding: 5px 30px;
     color: #fff;
@@ -238,7 +242,7 @@ body {
   }
   
   .wrapper ul li{
-    margin: 3px 0;
+    margin: 1px 0;
   }
 
   }
