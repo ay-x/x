@@ -1,23 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography</title>
-    <link rel="stylesheet" href="photography.css">
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    flex-wrap: nowrap;
+    position: absolute;
+    color: #fff;
+    animation:transitionin 4.5s;
+    top: 69%;
+    left: 35%;
+    font-size: 55px;
+    font-weight: 700;
+    box-decoration-break: clone;
+    transform: translate(-50%,-50%);
+    -webkit-transition: color 0.65 ease-in;
+    -o-transition: color 0.65s ease-in;
+    transition: color 0.65s ease-in;
     
-
-</head>
-<body>
-    <body style="background-color: rgb(0, 0, 0);" height: 100vh; max-height>
-       
-</body>
-</html>
-
-<ul>
-    <li><a href="https://yaqdhan.com"><h1>under development ...</h1></a></li>
+  }
 
 
-    </ul>
-    
+
+  @media screen and (max-width: 690px) 
+  
+  {
+  
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        flex-wrap: nowrap;
+        position: absolute;
+        color: #ffffff;
+        top: 69%;
+        left: 36%;
+        font-size: 30px;
+        font-weight: 400;
+        box-decoration-break: clone;
+        -webkit-transition: color 0.65 ease-in;
+        -o-transition: color 0.65s ease-in;
+        transition: color 0.65s ease-in;
+        
+        
+      }
+
+
+}
