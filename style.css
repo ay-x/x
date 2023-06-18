@@ -187,11 +187,7 @@ footer {
     font-size: .9rem;
 }
 
-footer,
-p {
-    display: block;
-    letter-spacing: 1px
-}
+
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 * {
