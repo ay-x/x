@@ -73,12 +73,32 @@ span:nth-child(even) {
     text-decoration: none;
     line-height: 50px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
     cursor: pointer;
-    backdrop-filter: blur(3px);
-    transition: all 0.3s ease-in-out;
-    animation: transitionin 4.5s;
+    
 }
+
+
+@media screen and (max-width: 690px) {
+
+
+    .menu-btn {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+}
+
 
 </style>
