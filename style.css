@@ -64,6 +64,24 @@
     transition: color 0.65s ease-in;
 }
 
+.textAZ {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    flex-wrap: nowrap;
+    position: absolute;
+    color: #fff;
+    animation: transitionin 4.5s;
+    top: 76%;
+    left: 41%;
+    font-size: 21px;
+    font-weight: 400;
+    box-decoration-break: clone;
+    transform: translate(-50%, -50%);
+    -webkit-transition: color 0.65 ease-in;
+    -o-transition: color 0.65s ease-in;
+    transition: color 0.65s ease-in;
+}
+
 .text:hover {
     opacity: 1;
     cursor: pointer;
@@ -187,8 +205,6 @@ footer {
     font-size: .9rem;
 }
 
-
-
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 * {
     transition: all 0.003s;
@@ -252,6 +268,23 @@ body {
     }
     .wrapper ul li {
         margin: 1px 0;
+    }
+    .textAZ {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        flex-wrap: nowrap;
+        position: absolute;
+        color: #fff;
+        animation: transitionin 4.5s;
+        top: 79%;
+        left: 40%;
+        font-size: 18px;
+        font-weight: 400;
+        box-decoration-break: clone;
+        transform: translate(-50%, -50%);
+        -webkit-transition: color 0.65 ease-in;
+        -o-transition: color 0.65s ease-in;
+        transition: color 0.65s ease-in;
     }
 }
 
