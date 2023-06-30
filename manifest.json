@@ -21,6 +21,25 @@
         "sizes": "192x192",
         "type": "image/png"
       }
+      ,{
+        "src": "y-icon-2x.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      }
+      ,{
+        "src": "y-icon-2x.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      }
+      ,{
+        "src": "y-icon-2x.png",
+        "sizes": "196x196",
+        "type": "image/png"
+      }
+
+
+
     ],
+
     "splash_pages": null
   }
