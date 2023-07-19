@@ -1,45 +1,158 @@
-h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    flex-wrap: nowrap;
+@import url("https://unpkg.com/open-props/normalize.min.css");
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Google Sans', sans-serif, system-ui;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+ul {
+    --width: 100vw;
+    width: var(--width);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 calc((var(--width, 80vw) * 0.5) - (var(--card-size, 300px) * 0.5));
+    scroll-timeline: --rad;
+    scroll-timeline-axis: inline;
+}
+
+li {
+    view-timeline-name: --item;
+    view-timeline-axis: inline;
+    scroll-snap-align: center;
+}
+
+article {
+    width: var(--card-size, 300px);
+    aspect-ratio: 3 / 4;
+    border-radius: var(--radius-3);
+    background: var(--surface-4);
+    position: relative;
+    overflow: hidden;
+    scale: 0.8;
+    animation: scalify both ease-in-out;
+    animation-timeline: --item;
+    animation-range: cover 40% cover 60%;
+}
+
+@keyframes scalify {
+    50% {
+        scale: 1;
+        background-position: 100% 100%;
+    }
+}
+
+.backdrop {
     position: absolute;
-    color: #fff;
-    animation:transitionin 4.5s;
-    top: 69%;
-    left: 35%;
-    font-size: 55px;
-    font-weight: 700;
-    box-decoration-break: clone;
-    transform: translate(-50%,-50%);
-    -webkit-transition: color 0.65 ease-in;
-    -o-transition: color 0.65s ease-in;
-    transition: color 0.65s ease-in;
-    
-  }
+    inset: 0;
+    filter: grayscale(1);
+    background-image: var(--bg);
+    background-size: 100% 100%;
+    background-position: 0% 50%;
+    animation: colorify both ease-in-out, shift-bg both linear;
+    animation-timeline: --item;
+    animation-range: cover 40% cover 60%, contain;
+}
 
+@keyframes colorify {
+    50% {
+        filter: grayscale(0);
+    }
+}
 
+@keyframes shift-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
 
-  @media screen and (max-width: 690px) 
-  
-  {
-  
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-style: italic;
-        flex-wrap: nowrap;
-        position: absolute;
-        color: #ffffff;
-        top: 69%;
-        left: 36%;
-        font-size: 30px;
-        font-weight: 400;
-        box-decoration-break: clone;
-        -webkit-transition: color 0.65 ease-in;
-        -o-transition: color 0.65s ease-in;
-        transition: color 0.65s ease-in;
-        
-        
-      }
+.word {
+    clip-path: inset(0 0 0 0);
+}
 
+span>span {
+    display: inline-block;
+    translate: 0 100%;
+    animation: move-on-up both ease-in-out;
+    animation-timeline: --item;
+    animation-range: cover 40% cover 60%;
+}
 
+@keyframes move-on-up {
+    0% {
+        translate: 0 100%;
+    }
+    50% {
+        translate: 0 0;
+    }
+    100% {
+        translate: 0 -100%;
+    }
+}
+
+a>span {
+    background: hsla(0, 0%, 0%, 0.4);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+span {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: var(--gray-0)
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#preloader {
+    background: #000 url(y.PNG) no-repeat center center;
+    background-size: 14%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+@media screen and (max-width: 690px) {
+    #preloader {
+        background: #000 url(Y.png) no-repeat center center;
+        background-size: 27%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
 }
