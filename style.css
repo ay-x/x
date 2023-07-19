@@ -263,3 +263,23 @@ body {
         transform: rotateX(6);
     }
 }
+
+#preloader {
+    background: #000 url(y.PNG) no-repeat center center;
+    background-size: 14%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+@media screen and (max-width: 690px) {
+    #preloader {
+        background: #000 url(y.PNG) no-repeat center center;
+        background-size: 27%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+}
