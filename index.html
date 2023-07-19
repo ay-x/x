@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uɐɥpbɐʎ</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="y-icon-2x.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="y-icon-2x.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="y-icon-2x.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="y-icon-2x.png" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="y-icon-2x.png" />
@@ -30,7 +30,7 @@
 </head>
 
 <body style="background-color: black;" height: 100vh; max-height>
-
+    <div id="preloader"></div>
 
     <div class="stars"></div>
     <div class="twinkling"></div>
@@ -41,8 +41,8 @@
 
 
         <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><i class="/">≡</i>
-          </label>
+        <label for="active" class="menu-btn"><i class="/">≡</i></label>
+
         <div class="wrapper">
 
             <ul>
@@ -65,3 +65,18 @@
 
 
 </footer>
+
+
+<script>
+    
+    var loader = document.getElementById("preloader");
+
+
+    window.addEventListener("load", function() {
+        loader.style.display = "none";
+    })
+
+    $(window).on("load", function() {
+        $(".preloader").fadeOut("slow");
+    });
+</script>
