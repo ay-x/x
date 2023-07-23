@@ -28,20 +28,7 @@ h1 {
 p {
     opacity: 1;
     cursor: pointer;
-    color: 
-    #fffffffa
-}
-
-@media screen and (max-width: 760px) {
-    .text {
-        font-size: 30px;
-    }
-    .wrapper ul li a {
-        font-size: 35px;
-    }
-    .wrapper ul li {
-        margin: 5px 0;
-    }
+    color: #fffffffa
 }
 
 #main {
@@ -61,4 +48,17 @@ p {
     display: inline-block;
     padding-right: 8px;
     animation: type .8s alternate infinite;
+} 
+
+
+@media screen and (max-width: 760px) {
+    .text {
+        font-size: 30px;
+    }
+    .wrapper ul li a {
+        font-size: 35px;
+    }
+    .wrapper ul li {
+        margin: 5px 0;
+    }
 }
