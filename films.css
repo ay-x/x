@@ -1,45 +1,64 @@
+@keyframes type {
+    from {
+        box-shadow: inset -3px 0px 0px #dd1515;
+    }
+    to {
+        box-shadow: inset -3px 0px 0px transparent;
+    }
+}
+
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    flex-wrap: nowrap;
     position: absolute;
-    color: #fff;
-    animation:transitionin 4.5s;
+    color: #000000;
     top: 69%;
-    left: 35%;
-    font-size: 55px;
-    font-weight: 700;
-    box-decoration-break: clone;
-    transform: translate(-50%,-50%);
-    -webkit-transition: color 0.65 ease-in;
-    -o-transition: color 0.65s ease-in;
-    transition: color 0.65s ease-in;
-    
-  }
+    left: 36%;
+    font-size: 25px;
+    font-weight: 800;
+    transform: translate(-50%, -50%);
+    opacity: 33;
+}
 
+.h1:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: #c92929fa
+}
 
+p {
+    opacity: 1;
+    cursor: pointer;
+    color: 
+    #fffffffa
+}
 
-  @media screen and (max-width: 690px) 
-  
-  {
-  
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-style: italic;
-        flex-wrap: nowrap;
-        position: absolute;
-        color: #ffffff;
-        top: 69%;
-        left: 36%;
+@media screen and (max-width: 760px) {
+    .text {
         font-size: 30px;
-        font-weight: 400;
-        box-decoration-break: clone;
-        -webkit-transition: color 0.65 ease-in;
-        -o-transition: color 0.65s ease-in;
-        transition: color 0.65s ease-in;
-        
-        
-      }
+    }
+    .wrapper ul li a {
+        font-size: 35px;
+    }
+    .wrapper ul li {
+        margin: 5px 0;
+    }
+}
 
+#main {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
 
+.fof {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.fof p {
+    font-size: 25px;
+    display: inline-block;
+    padding-right: 8px;
+    animation: type .8s alternate infinite;
 }
