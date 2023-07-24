@@ -1,7 +1,7 @@
 
 @keyframes type {
     from {
-        box-shadow: inset -3px 0px 0px #dd1515;
+        box-shadow: inset -3px 0px 0px #ffffff;
     }
     to {
         box-shadow: inset -3px 0px 0px transparent;
@@ -23,13 +23,13 @@ h1 {
 .h1:hover {
     opacity: 1;
     cursor: pointer;
-    color: #c92929fa
+    color: #ffffff
 }
 
 p {
     opacity: 1;
     cursor: pointer;
-    color: #fffffffa
+    color: #ffffff
 }
 
 #main {
