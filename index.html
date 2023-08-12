@@ -23,6 +23,7 @@
     <link rel="icon" type="image/png" href="y-icon-2x.png" sizes="192x192" />
     <link rel="shortcut icon" href="y-icon-2x.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -43,6 +44,13 @@
         <input type="checkbox" id="active">
         <label for="active" class="menu-btn"><i class="/">≡</i></label>
 
+        <footer>
+            <a href="mailto:hi@yaqdhan.com">E-mail</a> &mdash;
+            <a href="https://instagram.com/03ay">Instagram</a>
+
+
+        </footer>
+
         <div class="wrapper">
 
             <ul>
@@ -54,29 +62,15 @@
 
 
 
-
-        <div class="content"> </div>
-
-</body>
-
-<footer>
-    <a href="mailto:hi@yaqdhan.com">E-mail</a> &mdash;
-    <a href="https://instagram.com/03ay">Instagram</a>
+        <script>
+            var loader = document.getElementById("preloader");
 
 
-</footer>
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            })
 
-
-<script>
-    
-    var loader = document.getElementById("preloader");
-
-
-    window.addEventListener("load", function() {
-        loader.style.display = "none";
-    })
-
-    $(window).on("load", function() {
-        $(".preloader").fadeOut("slow");
-    });
-</script>
+            $(window).on("load", function() {
+                $(".preloader").fadeOut("slow");
+            });
+        </script>
