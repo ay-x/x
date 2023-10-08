@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @keyframes move-twink-back {
     from {
         background-position: 0 0;
@@ -187,7 +188,6 @@ footer {
     font-size: .9rem;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 * {
     transition: all 0.003s;
 }
