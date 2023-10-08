@@ -169,8 +169,8 @@ body {
 }
 
 footer {
-    bottom: 15px;
-    font-size: 1rem;
+    bottom: 44px;
+    font-size: 15.px;
 }
 
 a {
@@ -182,10 +182,6 @@ a {
 
 a:hover {
     color: #333333fa;
-}
-
-footer {
-    font-size: .9rem;
 }
 
 * {
