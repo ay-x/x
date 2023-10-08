@@ -157,7 +157,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-footer,
+footer ,
 main {
     text-align: center;
     animation: transitionin 3s;
@@ -170,7 +170,7 @@ body {
 
 footer {
     bottom: 44px;
-    font-size: 15.px;
+    font-size: 18px;
 }
 
 a {
@@ -246,6 +246,10 @@ body {
     }
     .wrapper ul li {
         margin: 1px 0;
+    }
+    footer {
+        bottom: 44px;
+        font-size: 0.99rem;
     }
 }
 
