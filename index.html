@@ -38,53 +38,83 @@
 
 </head>
 
-<body style="background-color: black;" height: 100vh; max-height>
-    <div class="loader"></div>
-
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    <div class="clouds">
-        <div class="text">Abdullah Yaqdhan</div>
+<body style="background-color: rgb(0, 0, 0)" width: 100px; max-height></body>
+<div class="loader"></div>
 
 
+<nav>
+    <div class="logo"></div>
+
+    </div>
+    <ul type="none" id="menuList">
+        <li><a class="v0" href="https://yaqdhan.com/">Home</a></li>
+        <li><a class="v1" href="Nostalgia">Nostalgia(2024)</a></li>
+        <li><a class="v2" href="Music">Music</a></li>
+        <li><a class="v3" href="WorksOnPaper">WorksOnPaper</a></li>
+    </ul>
+    <div class="menu-icon">
+        <a class="d" onclick="toggleMenu( )">Menu</a>
+    </div>
+</nav>
 
 
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><i class="fa-solid fa-bars fa-xs"></i></label>
+<a href="https://yaqdhan.com/">
+    <img class="img" src="logo.PNG"></img>
+    <img class="gif" src="yyyy.gif"></img>
+</a>
+
+<div class="email">
+    <a href="mailto:hi@yaqdhan.com" class="fa-regular fa-envelope fa-sm"></a>
+</div>
+<div class="instagram">
+    <a href="https://instagram.com/03ay" class="fa-brands fa-instagram fa-sm"></a>
+</div>
 
 
-        <footer>
-            <div class="email">
-                <a href="mailto:hi@yaqdhan.com" class="fa-regular fa-envelope fa-sm"></a>
-            </div>
-            <div class="instagram">
-                <a href="https://instagram.com/03ay" class="fa-brands fa-instagram fa-sm"></a>
-            </div>
-
-        </footer>
-
-        <div class="wrapper">
-
-            <ul>
-                <li><a href="dream">Dream</a></li>
-                <li><a href="photography">Photography</a></li>
-                <li><a href="videography">Videography</a></li>
-              
 
 
-            </ul>
-        </div>
+
+<header class="outer-container">
+    <div class="video-container">
+        <img class="life" src="IMG_8186.jpg" autoplay loop muted></img>
+    </div>
+    <div class="overlay"></div>
+
+
+
+
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+
+
+
+
+    <body>
 
 
 
         <script>
-            window.addEventListener("load", () => {
-                const loader = document.querySelector(".loader");
+            let menuList = document.getElementById("menuList")
+            menuList.style.maxHeight = "0px";
 
-                loader.classList.add("loader--hidden");
-
-                loader.addEventListener("transitionend", () => {
-                    document.body.removeChild(loader);
-                });
-            });
+            function toggleMenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1000px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
         </script>
+        <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>
