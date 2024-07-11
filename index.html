@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -30,26 +29,95 @@
     <link rel="icon" type="image/png" href="y-icon-2x.png" sizes="192x192" />
     <link rel="shortcut icon" href="y-icon-2x.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7cd2963352.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
 
 
 
 </head>
 
-<body style="background-color: black;" height: 100vh; max-height>
-    
+<body style="background-color: rgb(0, 0, 0);"></body>
+<div class="loader"></div>
+
+
+<nav>
+    <div class="logo"></div>
+
+    </div>
+    <ul type="none" id="menuList">
+        <li><a class="v0" href="https://yaqdhan.com/">Home</a></li>
+        <li><a class="v1" href="WorksOnPaper">WorksOnPaper</a></li>
+        <li><a class="v2" href="Poetry">Poetry</a></li>
+        <li><a class="v3" href="/">Autobiography</a></li>
+        <li><a class="v4" href="Autobiography/vol-1">vol-1</a></li>
+    </ul>
+    <div class="menu-icon">
+        <a class="d" onclick="toggleMenu( )">Menu</a>
+    </div>
+</nav>
+
+
+<a href="https://yaqdhan.com/">
+    <img class="img" src="logo.PNG"></img>
+    <img class="gif" src="yyyy.gif"></img>
+</a>
+
+<div class="email">
+    <a href="mailto:hi@yaqdhan.com" class="fa-regular fa-envelope fa-sm"></a>
+</div>
+<div class="instagram">
+    <a href="https://instagram.com/03ay" class="fa-brands fa-instagram fa-sm"></a>
+</div>
+
+
+
+
+
+<header class="outer-container">
+    <img class="life" src="IMG_8186.jpg"></img>
+    </div>
+    <div class="overlay"></div>
+</header>
+
+
+
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        });
+    });
+</script>
+
+
+
+
+<body>
+
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "1000px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </body>
-<div class="bg-overlay"></div>
-<video class="fullscreen-video" id="myVideo" autoplay="autoplay" muted loop>
-        <source src="words.MP4">
-    </video>
-
-
-
-
 
 </html>
