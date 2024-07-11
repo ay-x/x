@@ -1,0 +1,460 @@
+/*css/style.css */
+
+
+.slider {
+    margin: 50% auto;
+    width: 50%;
+    
+}
+
+.img-box img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .slider {
+        margin: 110px auto;
+        width: 80%;
+    }
+    .text {
+       
+       text-align: right;
+        width: 105%;
+        font-family: 'Amiri';
+        font-weight: bold;
+
+    }
+    
+    
+}
+
+@media screen and (min-width: 601px) {
+    .slider {
+        margin: 90px auto;
+        width: 55%;
+    }
+
+    .text {
+        font-size: 110%;
+        text-align: right;
+         width: 105%;
+         font-family: 'Amiri';
+        }
+
+}
+
+
+/*xxss*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: verdana;
+    height: 130vh;
+    width: 100vw;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.email {
+    z-index: 34;
+    font-style: normal;
+    position: fixed;
+    left: 55px;
+    top: 300px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    -webkit-transition: color 0.65s ease;
+    -o-transition: color 0.65s ease;
+    transition: color 0.65s ease;
+}
+
+.instagram {
+    z-index: 34;
+    font-style: normal;
+    position: fixed;
+    left: 85px;
+    top: 300px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    -webkit-transition: color 0.65s ease;
+    -o-transition: color 0.65s ease;
+    transition: color 0.65s ease;
+}
+
+.img {
+    position: absolute;
+    display: flex;
+    z-index: 38;
+    flex: auto;
+    left: 45px;
+    right: 234px;
+    top: 25px;
+    height: 110px;
+    width: 110px;
+}
+
+.gif {
+    position: absolute;
+    display: flex;
+    z-index: 38;
+    flex: auto;
+    right: 2%;
+    top: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-style: normal;
+    -webkit-transition: color 0.65s ease;
+    -o-transition: color 0.65s ease;
+    transition: color 0.65s ease;
+}
+
+a:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: #333333fa;
+}
+
+* {
+    transition: all 0.003s;
+}
+
+footer,
+main {
+    text-align: center;
+    animation: transitionin 5.5s;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+#main {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.loader {
+    background: #000000 url(y.PNG) no-repeat center center;
+    background-size: 14%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 2.50s, visibility 2.50s;
+}
+
+@media screen and (max-width: 690px) {
+    .loader {
+        background: #000000 url(y.PNG) no-repeat center center;
+        background-size: 27%;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 2000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 2.50s, visibility 2.50s;
+    }
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    background: #000000 url(y.PNG) no-repeat center center;
+    background-size: 1998%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    animation: loading 2.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+nav .d {
+    padding-right: 0.1%;
+    display: auto;
+    align-items: right;
+    justify-content: space-between;
+    background: #000000;
+    position: absolute;
+    width: 1px;
+    left: 85%;
+    right: 1px;
+    color: #999999;
+    top: 20px;
+    z-index: 1984;
+}
+
+.d {
+    right: 1px;
+    font-family: 'Crimson Text';
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: right;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.navbar {
+    display: block;
+}
+
+@media (max-width:600px) {
+    .navbar {
+        display: none;
+    }
+    .gif {
+        display: none;
+    }
+    .img {
+        position: absolute;
+        display: flex;
+        z-index: 38;
+        flex: auto;
+        left: 25px;
+        right: 234px;
+        top: 25px;
+        height: 80px;
+        width: 80px;
+    }
+    .instagram {
+        z-index: 34;
+        font-style: normal;
+        position: fixed;
+        left: 35px;
+        top: 130px;
+        height: 50px;
+        width: 50px;
+        text-align: left;
+        text-decoration: none;
+        line-height: 50px;
+        font-size: 18px;
+        color: #ffffff;
+        -webkit-transition: color 0.65s ease;
+        -o-transition: color 0.65s ease;
+        transition: color 0.65s ease;
+    }
+    .email {
+        z-index: 34;
+        font-style: normal;
+        position: fixed;
+        left: 35px;
+        top: 100px;
+        height: 50px;
+        width: 50px;
+        text-align: left;
+        text-decoration: none;
+        line-height: 50px;
+        font-size: 18px;
+        -webkit-transition: color 0.65s ease;
+        -o-transition: color 0.65s ease;
+        transition: color 0.65s ease;
+    }
+    .menu-icon i {
+        color: #ffffff;
+        font-size: 30px;
+        right: 25px;
+    }
+    nav ul {
+        position: absolute;
+        height: 90%;
+        z-index: 111;
+        top: 40px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #000000;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li {
+        padding: 20%;
+        padding-top: 0;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList {
+        transition: all 1.0s;
+        font-style: normal;
+        text-decoration-style: none;
+    }
+}
+
+.v0 {
+    z-index: 34;
+    font-family: 'Crimson Text';
+    font-style: normal;
+    position: absolute;
+    left: 55px;
+    top: 125px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    -webkit-transition: color 0.65s ease;
+    -o-transition: color 0.65s ease;
+    transition: color 0.65s ease;
+}
+
+.v1 {
+    z-index: 34;
+    font-family: 'Crimson Text';
+    font-style: normal;
+    position: absolute;
+    left: 55px;
+    top: 155px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    -webkit-transition: color 0.65s ease;
+    -o-transition: color 0.65s ease;
+    transition: color 0.65s ease;
+}
+
+.v2 {
+    z-index: 34;
+    font-family: 'Crimson Text';
+    font-style: normal;
+    position: absolute;
+    left: 55px;
+    top: 185px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    color: #999999;
+    -webkit-transition: color 0.65s ease;
+    -o-transition: color 0.65s ease;
+    transition: color 0.65s ease;
+}
+
+.v3 {
+    z-index: 34;
+    font-family: 'Crimson Text';
+    font-style: normal;
+    position: absolute;
+    left: 55px;
+    top: 215px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    -webkit-transition: color 0.65s ease;
+    -o-transition: color 0.65s ease;
+    transition: color 0.65s ease;
+}
+
+.v4 {
+    z-index: 34;
+    font-family: 'Crimson Text';
+    font-style: normal;
+    position: absolute;
+    left: 55px;
+    top: 245px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    -webkit-transition: color 0.65s ease;
+    -o-transition: color 0.65s ease;
+    transition: color 0.65s ease;
+}
