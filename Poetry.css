@@ -302,7 +302,7 @@ nav ul {
     .instagram {
         z-index: 34;
         font-style: normal;
-        position: fixed;
+         position: absolute;
         left: 35px;
         top: 130px;
         height: 50px;
@@ -319,7 +319,7 @@ nav ul {
     .email {
         z-index: 34;
         font-style: normal;
-        position: fixed;
+         position: absolute;
         left: 35px;
         top: 100px;
         height: 50px;
