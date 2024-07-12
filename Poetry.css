@@ -88,7 +88,7 @@ body::-webkit-scrollbar {
 .email {
     z-index: 34;
     font-style: normal;
-    position: fixed;
+    position: absolute;
     left: 55px;
     top: 300px;
     height: 50px;
@@ -105,7 +105,7 @@ body::-webkit-scrollbar {
 .instagram {
     z-index: 34;
     font-style: normal;
-    position: fixed;
+ position: absolute;
     left: 85px;
     top: 300px;
     height: 50px;
